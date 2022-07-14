@@ -11,4 +11,10 @@ public class singleton {
     public void setSentLandmark(Landmark sentLandmark){
         this.sentLandmark = sentLandmark;
     }
+    public static Singleton getSingleton(){
+        if(singleton == null){
+            singleton = new singleton();
+        }
+        return singleton;
+    }
 }

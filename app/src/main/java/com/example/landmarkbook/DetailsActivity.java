@@ -22,5 +22,7 @@ public class DetailsActivity extends AppCompatActivity {
         binding.nameText.setText(selectedLandMark.name);
         binding.countryText.setText(selectedLandMark.country);
         binding.imageView.setImageResource(selectedLandMark.image);
+        singleton singleton = singleton.getInstance();
+        Landmark selectedLandmark = singleton.getSentLandmark();
     }
 }
